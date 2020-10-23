@@ -48,3 +48,25 @@ if phrase==phrase[::-1]:#slicing technique
     print("\nBy Method 2: Wow!, The phrase is a Palindrome!")
 else:
     print("\nBy Method 2: Sorry, The given phrase is not a Palindrome.")
+
+
+    
+    
+    
+"""
+Method #3:
+A more simple method is just use one for loop and traverse string from 0 and n checking every element till middle from starting and from end of the string.
+If every element is equal then yes else not.
+"""
+
+string_to_check=input(); #Take input
+for i in range(int(len(string_to_check)/2)):
+    if string_to_check[i] != string_to_check[len(string_to_check)-1-i]: #Checking condition for equating first and last element and so on
+        flag = False #flag 
+    else:
+        flag = True #flaf
+
+if flag:
+    print("Yes it's a palindrome")
+else:
+    print("No it's not a palindrome")
